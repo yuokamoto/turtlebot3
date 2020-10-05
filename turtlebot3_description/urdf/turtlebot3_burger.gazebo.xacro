@@ -131,5 +131,10 @@
       </plugin>
     </sensor>
   </gazebo>
-
+  <gazebo>
+    <plugin filename="libgazebo_ros_moveit_planning_scene.so" name="gazebo_ros_moveit_planning_scene">
+      <topicName>/move_group/monitored_planning_scene</topicName>
+      <updatePeriod>0.5</updatePeriod>
+    </plugin>
+  </gazebo>
 </robot>
